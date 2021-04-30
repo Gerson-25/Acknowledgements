@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/post.css">
+    <link rel="stylesheet" href="../public/css/global.css">
+    <link rel="stylesheet" href="../public/css/usersList.css">
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600&display=swap" rel="stylesheet"> 
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!--this is the navigation bar-->
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo teal-text"></a>
+            <ul class="right hide-on-med-and-down">
+                <li ><a href="#" class="teal-text">Reconocimientos</a></li>
+                <li ><a href="https://cremultiapps.web.app/prueba.html" class="btn-flat">REGRESAR A ALIANZAS</a></li>
+            </ul>
+        </div>
+    </nav> 
+
+    <!--this is the body container-->
+
+    <div class="body-container">
+
+
+        <!--this is the container achievement list-->
+        <div class="achievements-container container-main">
+
+
+    
+            
+            <div class="row">
+
+
+                <!-- container of unauthorized post-->
+                <div class="col s4 unauthorized-post pending-recognitions-container">
+
+                    <div class="header-unauthorized col s12">
+                        <span> Notificaciones</span> <br>
+                        <div style="color: cadetblue; display: none;" class="es-unauthorized-post"> No hay Notificaciones </div>
+                    </div>
+
+                    
+
+                    <!--
+                    <div class="post-request">
+                        <div class="header">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="achievement-title col s12 "><span>Esteban Hernandez</span> esta solicitando enviar un nuevo reconocimiento</div>
+                                    <a href="#" data-target="authorization-modal" class="modal-trigger offset-s9 col s3">ver</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-request">
+                        <div class="header">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="achievement-title col s12 "><span>Esteban Hernandez</span> esta solicitando enviar un nuevo reconocimiento</div>
+                                    <a href="#" data-target="authorization-modal" class="modal-trigger offset-s9 col s3">ver</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+                </div>
+
+                <div id="authorization-modal" class="modal">
+                    <div class="modal-content">
+                        <p>Solicitud de reconocimiento</p>
+                        <div class="valign-wrapper teal-text text-darken-4">
+                          <span class="sender"></span>  
+                          <i class=" tiny material-icons">keyboard_arrow_right</i>   
+                          <span class="receiver"></span>
+                        </div>
+                      <div class="message"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" id="authorize-button" class="modal-close waves-effect waves-green btn-flat white-text">Autorizar</a>
+                        <a href="#!" id="reject-button" class="modal-close waves-effect waves-green btn-flat white-text">Rechazar</a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat offset-s6">SALIR</a>
+                    </div>
+                  </div>
+
+                <div class="col s8 post acepted-post">
+                   
+                    <div class="col s12 es-post" style="padding: 100px;">
+                        <img src="img/undraw_empty_xct9.svg" alt="" width="100%">
+                        <p class="center" style="font-weight: bold; color: cadetblue; font-size: larger;">No hay reconocimientos actualmente</p>
+                    </div> 
+                
+                   
+                    <!--
+                    <div class="col s12 post-item-container valign-wrapper teal lighten-5 left-align">
+                        <div class="col s2 post-item-picture">
+                            <img src="https://microteltechnology.com/wp-content/uploads/2017/09/call-center-agent.jpg" alt="" class="z-depth-2">
+                        </div>
+                        <div class="col s10 post-item-body">
+                            <div class="col s12 achievement-title valign-wrapper teal-text text-darken-4">Hector Hernandez  <i class=" tiny material-icons">keyboard_arrow_right</i>   Jose Rodriguez</div>
+                            <div class="col s12 achievement-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <div class="col s12 post-date right-align">12 de Febrero</div>
+                        </div>
+
+                    </div>
+
+                    <div class="col s12 post-item-container valign-wrapper teal lighten-5 left-align">
+                        <div class="col s2 post-item-picture">
+                            <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="" class="z-depth-2">
+                        </div>
+                        <div class="col s10 post-item-body">
+                            <div class="col s12 achievement-title valign-wrapper teal-text text-darken-4">Hector Hernandez  <i class=" tiny material-icons">keyboard_arrow_right</i>   Jose Rodriguez</div>
+                            <div class="col s12 achievement-description">this is a example of a achievement and this is the body of you achievement</div>
+                            <div class="col s12 post-date right-align">12 de Febrero</div>
+                        </div>
+
+                    </div>
+
+                    <div class="col s12 post-item-container valign-wrapper teal lighten-5 left-align">
+                        <div class="col s2 post-item-picture">
+                            <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="" class="z-depth-2">
+                        </div>
+                        <div class="col s10 post-item-body">
+                            <div class="col s12 achievement-title valign-wrapper teal-text text-darken-4">Hector Hernandez  <i class=" tiny material-icons">keyboard_arrow_right</i>   Jose Rodriguez</div>
+                            <div class="col s12 achievement-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                            <div class="col s12 post-date right-align">12 de Febrero</div>
+                        </div>
+
+                    </div>
+
+                    <div class="col s12 post-item-container valign-wrapper teal lighten-5 left-align">
+                        <div class="col s2 post-item-picture">
+                            <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="" class="z-depth-2">
+                        </div>
+                        <div class="col s10 post-item-body">
+                            <div class="col s12 achievement-title valign-wrapper teal-text text-darken-4">Hector Hernandez  <i class=" tiny material-icons">keyboard_arrow_right</i>   Jose Rodriguez</div>
+                            <div class="col s12 achievement-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <div class="col s12 post-date right-align">12 de Febrero</div>
+                        </div>
+
+                    </div>
+
+                    <div class="col s12 post-item-container valign-wrapper teal lighten-5 left-align">
+                        <div class="col s2 post-item-picture">
+                            <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="" class="z-depth-2">
+                        </div>
+                        <div class="col s10 post-item-body">
+                            <div class="col s12 achievement-title valign-wrapper teal-text text-darken-4">Hector Hernandez  <i class=" tiny material-icons">keyboard_arrow_right</i>   Jose Rodriguez</div>
+                            <div class="col s12 achievement-description">this is a example of a achievement and this is the body of you achievement</div>
+                            <div class="col s12 post-date right-align">12 de Febrero</div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col s12 post-item-container valign-wrapper orange lighten-5 left-align">
+                        <div class="col s2 post-item-picture">
+                            <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="" class="z-depth-2">
+                        </div>
+                        <div class="col s10 post-item-body">
+                            <div class="col s12 achievement-title valign-wrapper yellow-text text-darken-4">Hector Hernandez  <i class=" tiny material-icons">keyboard_arrow_right</i>   Jose Rodriguez</div>
+                            <div class="col s12 achievement-description">this is a example of a achievement and this is the body of you achievement</div>
+                            <div class="col s12 post-date right-align">12 de Febrero</div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col s12 post-item-container valign-wrapper teal lighten-5 left-align">
+                        <div class="col s2 post-item-picture">
+                            <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="" class="z-depth-2">
+                        </div>
+                        <div class="col s10 post-item-body">
+                            <div class="col s12 achievement-title valign-wrapper teal-text text-darken-4">Hector Hernandez  <i class=" tiny material-icons">keyboard_arrow_right</i>   Jose Rodriguez</div>
+                            <div class="col s12 achievement-description">this is a example of a achievement and this is the body of you achievement</div>
+                            <div class="col s12 post-date right-align">12 de Febrero</div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col s12 post-item-container valign-wrapper teal lighten-5 left-align">
+                        <div class="col s2 post-item-picture">
+                            <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="" class="z-depth-2">
+                        </div>
+                        <div class="col s10 post-item-body">
+                            <div class="col s12 achievement-title valign-wrapper teal-text text-darken-4">Hector Hernandez  <i class=" tiny material-icons">keyboard_arrow_right</i>   Jose Rodriguez</div>
+                            <div class="col s12 achievement-description">this is a example of a achievement and this is the body of you achievement</div>
+                            <div class="col s12 post-date right-align">12 de Febrero</div>
+                        </div>
+
+                    </div>
+
+                    -->
+
+                </div>
+
+
+            </div>
+        
+        </div>
+
+
+        <!--this is the container of users list-->
+        <div class="users-list-container container-main row"> 
+
+            <div class="col s12">
+                    <input placeholder="Buscar usuario..." class="search-bar-container col s12"  type="text" name="" id="">
+            </div>
+
+
+           <ul  class="collection list-container">
+
+
+                <!-- here it goes each user-->
+            
+
+           </ul>
+
+        </div>
+
+
+
+    </div>
+
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var objectives = document.querySelectorAll('.collapsible')
+    var instances = M.Collapsible.init(elems, objectives);
+  });
+</script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-functions.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+<script src="js/config.js"></script>
+<script src="js/new_request.js"></script>
+<script src="js/list_of_users.js"></script>
+</body>
+</html>

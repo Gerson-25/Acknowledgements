@@ -1,0 +1,77 @@
+.post{
+    font-size: 10px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 20px !important;
+    border-radius: 5px;
+    padding: 20px !important;
+}
+
+.post-date{
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 8px;
+}
+  
+  .circular--landscape{
+    border: black 0.5px solid;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+  }
+
+  .header-unauthorized span{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.header-unauthorized{
+    font-size: 10px;
+}
+
+.post-request{
+    font-size: 12px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.achievement{
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.achievement-title{
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.achievement-title span {
+    color: black;
+    font-weight: bold;
+}
+
+.achievement-description{
+    font-weight: bold;
+}
+
+.post-item-container{
+    padding: 10px !important;
+    border-radius: 10px;
+}
+
+.post-item-container img{
+    border: white 1px solid;
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.post-item-container{
+    margin-top: 20px;
+}

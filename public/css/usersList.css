@@ -1,0 +1,132 @@
+nav{
+    font-size: smaller !important;
+}
+
+nav ul li a{
+    height: 10% !important;
+    font-size: smaller !important;
+}
+
+.users-list-container{
+    background-color: teal;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100vh;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    flex: 1;
+}
+
+::placeholder { 
+    color: teal !important;
+    opacity: 0.5; 
+  }
+  
+  :-ms-input-placeholder {
+    color: teal !important;
+  }
+  
+  ::-ms-input-placeholder {
+    color: teal !important;
+  }
+
+nav{
+    background-color: white !important;
+}
+
+.row{
+    margin-bottom: 0px !important;
+}
+
+.achievements-container{
+    margin-bottom: 20px;
+    flex: 3;
+}
+
+.unauthorized-post{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.header-unauthorized {
+    margin-bottom: 20px;
+}
+
+.search-bar-container{
+    padding-left: 10px !important;
+    margin-top: 20px !important;
+    background-color: #e0f2f1 !important;
+    margin-left: 0px !important;
+    height: 30px !important;
+    color: teal !important;
+    border-radius: 5px !important;
+    border: 1px solid  teal !important ;
+    font-family:  'Raleway', sans-serif !important;
+    font-size: smaller !important;
+}
+
+
+.search-bar-container:focus{
+    border: 2px solid white !important;
+    box-shadow: none !important;
+}
+
+
+.collection-item:hover{
+    background-color: #00695c !important;
+}
+
+.collection-item:hover  div.item-title{
+    color: white !important;
+}
+
+.collection-item:hover div.item-description{
+    color: #b2dfdb;
+}
+
+
+.collection-item{   
+    background-color: teal !important;
+    border-bottom: none !important;
+    font-size: 10px;
+    height: auto !important;
+}
+
+.collection{
+    border: none !important;
+    position: absolute !important;
+  top: 50px !important;
+  bottom: 20px !important;
+  left: 20px !important;
+  right: 20px !important;
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.collection::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.collection {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+
+#authorize-button{
+    background-color: green !important;
+}
+
+#reject-button{
+    background-color: red !important;
+}
+
+.item-title{
+    color: white;
+}
+
+.item-description{
+    color: #b2dfdb;
+}

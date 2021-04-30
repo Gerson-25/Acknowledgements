@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reconocimientos Credicomer</title>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="./js/loader.css">
+     <link rel="stylesheet" href="./js/style.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="./js/send_loader.css">
+
+     <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+  
+
+  </head>
+  <body>
+    <div class="row">
+      <div class="col l12 m12 s12" style="height: auto; border-bottom: gray 0.5px solid;">
+          <div class="col l3 m6 s12" style="height: 40px; line-height: 40px; font-size: 25px;"><img class="company-logo" style="height: 40px;" alt="" src="./img/Logo_Credicomer.svg"></div>
+          <div class="col l4 m6 s12" style="height: 40px; "></div>
+          <div class="col l3 m12 s12" style="height: 40px;   border-bottom: black 3px solid;"><button class="btn-flat btn-establecimientos" style="height: 100%; width: 100%; font-size: 10px;">Colaboradores</button></div>
+          <div class="col l1 offset-l1" style="height: 40px; line-height: 40px;"><button class="btn-flat color btn-logout white-text waves-effect" style="background-color: gray; height: 60%; line-height: 60%; width: 60%; font-size: 10px;">SALIR</button></div>
+      </div>
+  </div>
+    <div class="row">
+
+      <div class="col s12">
+
+        <div class="col s8">
+          <div class="search-bar-container">
+            <i class="material-icons">search</i>
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="col s8" >
+          <div class="input-field  col s10">
+            <i class="material-icons prefix">search</i>
+            <input type="text" id="search-user"/>
+            <label for="search-user">Ingresar nombre</label>
+          </div>
+          <div class="col s2">
+            <button class="waves-effect waves-light btn">Buscar</button>
+          </div>
+        </div>
+
+        <div class="col s4">
+
+        </div>
+
+        <div class="col s8">
+          <table>
+            <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Correo</th>
+              </tr>
+            </thead>
+    
+            <tbody id="users-table">
+              <!--
+              <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+              </tr>
+              -->
+            </tbody>
+          </table>
+          <p class="grey-text text-lighten-1 center" id="not-result" style="display: none;">No hay concidencias</p>
+        </div>
+        <div class="col s4">
+          <div  class="card-panel">
+            <div class="row">
+              <div class="col s12">
+                <img src="https://i1.wp.com/alkiansgroup.com/wp-content/uploads/2018/11/male-placeholder-image.jpg?fit=1000%2C1000&ssl=1" alt="" class=" responsive-img" id="user-photo">
+              </div>
+              <div class="col s12">
+                <p style="margin-top: 40px;">Nombre: <span class="teal-text text-accent-4" id="user-name">Nombre Apellido</span></p>
+              </div>
+              <div class="col s12">
+                <p class="">Correo: <span class="teal-text text-accent-4" id="user-email">nombre_apellido@credicomer.com.sv</span></p>
+              </div>
+              <div class="col s12" style="display: none;">
+                <p style=" width: 100%;" class="">token: <span class="teal-text text-accent-4" id="user-token">Tybhjh6346YHJNdjkksdjk</span></p>
+              </div>
+              <div class="col s12" style="margin-bottom: 40px;" id="achievements-container">
+                <p class="col s12">Reconocimientos: </p>
+              </div>
+              <div class="col s12">
+                <button data-target="modal1" class="btn modal-trigger">Aregar Reconocimiento</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h6 style="margin-bottom: 40px;">Nuevo Reconocimiento para: <span id="message-user-name" style="color: darkcyan;"></span></h6>
+          <div class="input-field">
+            <i class="material-icons prefix">local_offer</i>
+            <input type="text" id="achievement-title"/>
+            <label for="achievement-title">Agrega el titulo</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">comment</i>
+            <input type="text" id="achievement-description"/>
+            <label for="achievement-description">Agrega el mensaje</label>
+          </div>
+        </div>
+        <div class="modal-footer row">
+            <div class="col s6">
+              <div class="lds-ellipsis" id="message-loader" style="display:none;"><div></div><div></div><div></div><div></div></div>
+            </div>
+            <div class="col s3">
+              <button href="#!" class="modal-close waves-effect waves-green btn-flat" id="modal-close">CANCELAR</button>
+            </div>
+            <div class="col s3">
+              <button href="#!" class="waves-effect waves-green btn-flat" id="save-achievement">ENVIAR</button>
+            </div>
+        </div>
+      </div>
+
+
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4 id="delete-title">¿Quieres eliminar este Reconocimiento?</h4>
+      <p id="delete-content">Esta accion no podrá ser revocada</p>
+    </div>
+    <div class="modal-footer">
+      <div class="col s6">
+        <div class="lds-ellipsis" id="delete-loader" style="display:none;"><div></div><div></div><div></div><div></div></div>
+      </div>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="delete-modal">CANCELAR</a>
+      <a href="#!" class="waves-effect waves-green btn-flat" id="delete-achievement">eliminar</a>
+    </div>
+  </div>
+
+      <div class="lds-roller col s12" style="position: fixed; height: 100%; display: none;" id="image-loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+      <!--     
+      <br>
+      <label for="">Colaborador: </label><select name="" id="user" class="options"><option value="" disabled>Seleccione el colaborador</option></select>
+      <br>
+      <br>
+      <label for="">Token: </label><select name="" id="token" class="tokenOptions"><option value="" disabled>Seleccione el colaborador</option></select>
+      <br>
+      <label for="">Tipo de Reconocimiento: </label>
+      <select name="" id="type">
+        <option value="" disabled>seleccione el tipo</option>
+        <option value="one">Reconocimiento uno</option>
+        <option value="two">Reconocimiento dos</option>
+        <option value="three">Reconocimiento tres</option>
+        <option value="Congrats">cumpleaños</option>
+      </select>
+      <br>
+      <label for="">Mensaje:</label>
+    
+      <textarea name="" class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
+      <button id="send" class="waves-effect waves-light btn">Enviar</button>
+
+      -->
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+    </div>  
+  </body>
+</html>

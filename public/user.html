@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/post.css">
+   
+    <link rel="stylesheet" href="../public/css/user.css">
+    <link rel="stylesheet" href="css/send_loader.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo teal-text"></a>
+            <ul class="right hide-on-med-and-down">
+                <li ><a href="#" class="teal-text">Reconocimientos</a></li>
+                <li ><a href="https://cremultiapps.web.app/prueba.html" class="btn-flat">REGRESAR A ALIANZAS</a></li>
+            </ul>
+        </div>
+    </nav> 
+
+    <div class="body-container">
+
+        <div class="profile-container col s4">
+
+        
+            <div class="new-post-container col s12 new-post-container-invisible">
+                <div class="col s12">
+                    <a href=""><i class="material-icons right teal-text btn-close-form">close</i></a>
+                </div>
+                <div class="container col s12">
+                
+                    <form action="" class="col s12">
+                        <h5>Vamos a enviar un mensaje de felicitaciones:</h5>
+                        <textarea  placeholder="Agrega el titulo a tu mensaje" class="materialize-textarea col s12 header"></textarea>
+
+                        <textarea class="materialize-textarea col s12 body" placeholder="Escribe tu mensaje"></textarea> 
+                        
+                        <div class="col s4">
+                            <a href="#" class="action-btn z-depth-1 col s4 cyan darken-2 white-text center btn-send-post">
+                                ENVIAR
+                            </a>
+                        </div>
+                        <div class="col s6">
+                            <div class="lds-ellipsis" id="message-loader" style="display:none;"><div></div><div></div><div></div><div></div></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row profile-card halign-wrapper center-align white">
+                <div class="profile-picture container">
+                    <img src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" class="z-depth-2 user-picture" alt="">
+                </div>
+                <div class="info-container col s12 center valign center-align">
+                    <div class="black-text user-name">
+                        loading user name...
+                    </div>
+                    <div class="teal-text text-darken-2 user-email col s12">
+                        loading email...
+                    </div>
+
+                    <div class="action-btn-container clickable offset-s3 col s6 halign-wrapper center-align">
+                        <a href="#" class="action-btn z-depth-1 cyan darken-2 white-text btn-open-form">
+                            FELICITAR
+                        </a>
+                    </div>
+
+                    <div class="achievement-container col s12" style="background-color: #f3e5f5; border-radius: 10px; margin-top: 20px;">
+                
+                    </div>
+
+                    <!--
+                    <div class="col s5 counter-container">
+                        <div class="s12 counter black-text">
+                            3
+                        </div>
+                        <div class="s12 counter-type">
+                            RECONOCIMIENTOS <br> INSTITUCIONALES
+                        </div>
+                    </div>
+
+                    <div class="col offset-s2 s5 counter-container">
+                        <div class="s12 counter black-text">
+                            0
+                        </div>
+                        <div class="s12 counter-type">
+                            RECONOCIMIENTOS <br> ENTRE COLABORADORES
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div> 
+        </div>
+
+        <div class="user-achievement post row acepted-post">
+
+            <div class="col s6 es-post valign-wrapper" style="padding: 100px;">
+                <img src="img/undraw_empty_xct9.svg" alt="" width="100%">
+                <p class="center" style="font-weight: bold; color: cadetblue; font-size: larger;">No hay reconocimientos actualmente</p>
+            </div> 
+
+        </div>
+
+    </div>
+
+    <div id="authorization-modal" class="modal">
+        <div class="modal-content">
+          <div class="row valign-wrapper">
+            <div class="col s3">
+                <img src="svg/cup.svg" style="height: 80px; width: 80px;" alt="">
+            </div>
+            <div class="col s7">
+                <div class="modal-title">Titulo del reconocimiento</div>
+                <div style="font-size: smaller;" class="modal-body">Cuerpo del reconocimiento</div>
+            </div>
+            <div class="col s2">
+                <a href="#!" id="close-button" class="modal-close waves-green btn-flat grey-text col s12 center" style="margin-bottom: 5px;">SALIR</a>
+                <a href="#!" id="reject-button" class="modal-close waves-effect waves-red btn-flat red-text col s12 center">ELIMINAR</a>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+    <div class="btn-container">
+        <a href="../public/index.html" class="btn black"><i class="material-icons right">arrow_forward</i>ATRAS</a>
+    </div>    
+
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/new_request.js"></script>
+    <script src="js/user.js"></script>
+</body>
+</html>

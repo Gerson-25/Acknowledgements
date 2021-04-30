@@ -1,0 +1,236 @@
+.profile-container{
+    flex: 1;
+    padding-top: 50px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.row{
+    margin: 0 !important;
+}
+.body-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.brand-logo{
+    padding-bottom: 0px !important;
+}
+
+div.profile-card{
+    border-right: 0.5px solid #bdbdbd;
+    height: 100vh;
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top: 0;
+}
+
+div.new-post-container{
+    border-right: 0.5px solid #bdbdbd;
+}
+
+.counter-type{
+    text-align: left;
+    font-weight: bold;
+}
+
+.user-achievement{
+    flex: 2;
+    border-radius: none !important;
+}
+.card{
+    height: 100% !important;
+}
+
+
+
+.profile-picture img{
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.achievement-item{
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+}
+.info-container{
+    height: 20%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.user-name{
+    font-size: 12px;
+}
+
+.user-email{
+    font-size: 10px;
+}
+
+.info-container a {
+    margin-top: 10px;
+}
+
+.btn-container{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+input{
+    color: white !important;
+    padding-left: 10px !important;
+    border-radius: 5px !important;
+    border: 1px solid #e0e0e0 !important;
+    padding-bottom: 0px !important;
+    height: 35px !important;
+    font-family:  'Raleway', sans-serif !important;
+    font-size: smaller !important;
+}
+
+
+
+.header{
+    height: 10px !important;
+}
+
+::placeholder { 
+    color: teal !important;
+    opacity: 0.5; 
+  }
+  
+  :-ms-input-placeholder {
+    color: teal !important;
+  }
+  
+  ::-ms-input-placeholder {
+    color: teal !important;
+  }
+
+textarea{
+    background-color: #e0f2f1 !important;
+    margin-left: 0px !important;
+    height: 100px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    color: teal !important;
+    border-radius: 5px !important;
+    border: 1px solid  #b2dfdb !important ;
+    font-family:  'Raleway', sans-serif !important;
+    font-size: smaller !important;
+}
+
+textarea:focus{
+    border: 1px solid teal !important;
+    box-shadow: none !important;
+}
+
+a{
+    font-size: 10px !important;
+}
+
+form{
+    padding: 20px;
+}
+
+nav{
+    background-color: white !important;
+}
+
+.counter-container{
+
+    padding: 10px !important;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.counter-container:hover{
+    border: 1px solid teal;
+}
+
+.counter-container .counter-type{
+    font-size: 8px !important;
+    color: teal;
+}
+
+.new-post-container-invisible{
+    height: 0vh;
+    top: 0px;
+    left: 0px;
+}
+
+.new-post-container-visible{
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+}
+
+.container-expander{
+    animation: container-expander 1s;
+}
+
+.container-folder{
+    animation: container-folder 1s;
+}
+
+@keyframes container-expander {
+    0%   {top: 0px; height: 0vh;}
+    100% {top: 0px;  height: 100vh;}
+}
+
+@keyframes container-folder {
+    0%   {top: 0px; height: 100vh;}
+    100% {top: 0px;  height: 0vh;}
+}
+
+.btn-flat{
+    border: 1px solid #c62828  !important;
+    color: #c62828 !important ;
+}
+
+
+
+#reject-button:hover{
+    background-color:#c62828 !important;
+    color: white !important;
+}
+
+#close-button:hover{
+    background-color:gray !important;
+    color: white !important;
+}
+
+.action-btn{
+    padding: 5px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 3px;
+}
+
+
+.clickable{
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .profile-container {
+      flex: 1;
+    }
+
+    .user-achievement{
+        flex: 1;
+    }
+  }
+
+#close-button{
+    border: gray 1px solid !important;
+}
+  

@@ -1,0 +1,5 @@
+.table-arrow:hover{
+    background-color: goldenrod;
+    color: honeydew;
+    pointer-events: stroke;
+}
